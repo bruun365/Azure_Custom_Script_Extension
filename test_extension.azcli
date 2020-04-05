@@ -1,0 +1,6 @@
+az vm extension set --resource-group RG-WVD-04 `
+                    --vm-name wvd-host-05 `
+                    --name CustomScriptExtension `
+                    --publisher Microsoft.Compute `
+                    --settings "C:\github\Azure_Custom_Script_Extension\test.json" `
+                    --version 1.9

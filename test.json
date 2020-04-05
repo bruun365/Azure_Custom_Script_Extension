@@ -1,0 +1,4 @@
+{
+    "fileUris": ["https://github.com/bruun365/winrm/blob/master/script.ps1"],
+    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File script.ps1"
+}
