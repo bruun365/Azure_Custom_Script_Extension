@@ -1,4 +1,4 @@
 {
     "fileUris": ["https://github.com/bruun365/Azure_Custom_Script_Extension/blob/master/script.ps1"],
-    "commandToExecute": "powershell -ExecutionPolicy Unrestricted \"test.ps1\""
+    "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File ./script.ps1"
 }
