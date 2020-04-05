@@ -1,0 +1,43 @@
+{
+    "fileUris": ["https://github.com/bruun365/Azure_Custom_Script_Extension/blob/master/script.ps1"],
+    "commandToExecute": "powershell -ExecutionPolicy Unrestricted -File script.ps1"
+}
+
+Returns an error: 
+
+az : ERROR: Deployment failed. Correlation ID: c06b73a3-aadf-4769-8bb8-a9ad8906bdc5. VM has reported a failure when processing extension 'CustomScriptExtension'. Error message: "Command execution 
+finished, but failed because it returned a non-zero exit code of: '1'. The command had an error output of: 'At 
+C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.10.5\Downloads\7\script.ps1:145 char:19
+At line:3 char:1
++ az vm extension set --resource-group RG-WVD-04 `
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Deployme...ps1:145 char:19:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
++               Sign&nbsp;up
++                   ~
+The ampersand (&) character is not allowed. The & operator is reserved for future use; wrap an am...' For more information, check the instance view by executing Get-AzVmssVm or Get-AzVm 
+(https://aka.ms/GetAzVm). These commands can be executed using CloudShell (https://aka.ms/CloudShell)"
+More information on troubleshooting is available at https://aka.ms/VMExtensionCSEWindowsTroubleshoot 
+
+
+######################################################################################################################
+
+{
+    "fileUris": ["https://github.com/bruun365/Azure_Custom_Script_Extension/blob/master/script.ps1"],
+    "commandToExecute": "powershell.exe ./script.ps1"
+}
+
+az : ERROR: Deployment failed. Correlation ID: add9f13d-9c98-42fc-b31e-2608eb59d5ce. VM has reported a failure when processing extension 'CustomScriptExtension'. Error message: "Command execution 
+finished, but failed because it returned a non-zero exit code of: '1'. The command had an error output of: './script.ps1 : File 
+C:\Packages\Plugins\Microsoft.Compute.CustomScriptExtension\1.10.5\Downloads\9\script.ps1 cannot 
+At line:1 char:1
++ az vm extension set --resource-group RG-WVD-04 `
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Deployme...ipt.ps1 cannot :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+be loaded because running scripts is disabled on this system. For more information, see about_Execution_Policies at 
+https:/go.microsoft...' For more information, check the instance view by executing Get-AzVmssVm or Get-AzVm (https://aka.ms/GetAzVm). These commands can be executed using CloudShell 
+(https://aka.ms/CloudShell)"
+More information on troubleshooting is available at https://aka.ms/VMExtensionCSEWindowsTroubleshoot 
