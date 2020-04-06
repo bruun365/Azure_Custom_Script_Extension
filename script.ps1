@@ -1,2 +1,2 @@
 #PowerShell Script
-New-Item -Path $env:SystemDrive -Name "logfiles" -ItemType "directory" -Force
+New-Item -Path c:\ -Name "logfiles" -ItemType "directory" -Force
