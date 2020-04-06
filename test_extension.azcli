@@ -1,3 +1,4 @@
+#AZ CLI
 az vm extension set --resource-group RG-WVD-04 `
                     --vm-name wvd-host-05 `
                     --name CustomScriptExtension `

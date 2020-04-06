@@ -41,3 +41,5 @@ be loaded because running scripts is disabled on this system. For more informati
 https:/go.microsoft...' For more information, check the instance view by executing Get-AzVmssVm or Get-AzVm (https://aka.ms/GetAzVm). These commands can be executed using CloudShell 
 (https://aka.ms/CloudShell)"
 More information on troubleshooting is available at https://aka.ms/VMExtensionCSEWindowsTroubleshoot 
+
+#None
